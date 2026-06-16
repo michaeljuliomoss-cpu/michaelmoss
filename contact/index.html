@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Northline Studio</title>
-  <meta name="description" content="Contact Northline Studio for brand, web, and product design collaborations." />
+  <meta name="description" content="Start your project with Northline Studio. Intake form with live price calculator for brand, web, and product design." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -17,7 +17,6 @@
         <span class="brand-mark">N</span>
         <span>Northline</span>
       </a>
-
       <button class="hamburger" data-hamburger aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -36,7 +35,7 @@
         <p class="eyebrow reveal">Start a project</p>
         <h1 id="page-title">Contact | Northline Studio</h1>
         <p class="page-lede reveal">
-          Tell us what you are building. We respond within two business days with next steps, timing, and the right shape for collaboration.
+          Tell us what you are building. Use the price calculator below to estimate your project, then send us the details. We respond within two business days.
         </p>
       </div>
     </section>
@@ -47,7 +46,7 @@
           <p class="eyebrow" id="contact-title">Direct line</p>
           <h2>For new work, press inquiries, and thoughtful collaborations.</h2>
           <p>
-            Prefer email? Send a note to <a href="mailto:hello@northline.studio">hello@northline.studio</a>. We usually reply within 24 hours with availability and next steps.
+            Prefer email? Send a note to <a href="mailto:hello@northline.studio">hello@northline.studio</a>. We usually reply within 24 hours with availability and next steps.<br/><br/>
             Based in <strong>Nassau, Bahamas</strong>. Serving local businesses and clients worldwide.
           </p>
 
@@ -57,27 +56,124 @@
             <a href="https://dribbble.com/" target="_blank" rel="noopener">Dribbble</a>
             <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
           </div>
-
-          <a class="button button-secondary" href="../index.html">Back to home</a>
         </div>
 
-        <form class="contact-form reveal" action="#" method="post">
+        <form class="contact-form intake-form" action="#" method="post" id="intake-form">
+          <!-- Name & Email -->
           <div class="field">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
           </div>
-
           <div class="field">
             <label for="email">Email</label>
             <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
           </div>
 
+          <!-- Business Name -->
           <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="7" placeholder="Project scope, timing, budget range, or a simple hello." required></textarea>
+            <label for="business">Business name</label>
+            <input id="business" name="business" type="text" placeholder="Your business or brand name" />
           </div>
 
-          <button class="button button-primary" type="submit">Send message</button>
+          <!-- Industry -->
+          <div class="field">
+            <label for="industry">Industry</label>
+            <select id="industry" name="industry">
+              <option value="">Select one…</option>
+              <option value="restaurant">Restaurant / Cafe / Bakery</option>
+              <option value="salon">Salon / Spa / Wellness</option>
+              <option value="retail">Retail / E-Commerce</option>
+              <option value="gym">Gym / Fitness</option>
+              <option value="medical">Medical / Health</option>
+              <option value="legal">Legal / Finance</option>
+              <option value="tech">Tech / SaaS</option>
+              <option value="hospitality">Hospitality / Hotel</option>
+              <option value="realestate">Real Estate</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Project Type -->
+          <div class="field">
+            <label>Project type</label>
+            <div class="radio-group" id="project-type">
+              <label class="radio-card" data-estimate="400">
+                <input type="radio" name="project-type" value="brochure" />
+                <span class="radio-card-content">
+                  <strong>Brochure Site</strong>
+                  <span class="radio-desc">Simple, static — ideal for local businesses starting online</span>
+                  <span class="radio-price" data-price="400">$400</span>
+                </span>
+              </label>
+              <label class="radio-card" data-estimate="850">
+                <input type="radio" name="project-type" value="dynamic" />
+                <span class="radio-card-content">
+                  <strong>Dynamic Site</strong>
+                  <span class="radio-desc">CMS, booking, contact forms, member areas</span>
+                  <span class="radio-price">$700 – $1,500</span>
+                </span>
+              </label>
+              <label class="radio-card" data-estimate="1500">
+                <input type="radio" name="project-type" value="premium" />
+                <span class="radio-card-content">
+                  <strong>Full Application</strong>
+                  <span class="radio-desc">Auth, payments, admin dashboard, client portal</span>
+                  <span class="radio-price">$1,500 – $3,000+</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Add-ons -->
+          <div class="field">
+            <label>Add-ons</label>
+            <div class="checkbox-group">
+              <label class="check-card">
+                <input type="checkbox" name="addon" value="ai-automation" id="addon-ai" />
+                <span class="check-card-content">
+                  <strong>AI &amp; Automation</strong>
+                  <span class="check-desc">Chatbots, automated workflows, smart forms</span>
+                  <span class="check-price">+$150 – $500/mo</span>
+                </span>
+              </label>
+              <label class="check-card">
+                <input type="checkbox" name="addon" value="marketing" id="addon-marketing" />
+                <span class="check-card-content">
+                  <strong>Marketing &amp; SEO</strong>
+                  <span class="check-desc">Google ads, social strategy, content</span>
+                  <span class="check-price">+$590/mo + ads</span>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="field">
+            <label for="timeline">Timeline</label>
+            <select id="timeline" name="timeline">
+              <option value="">Select one…</option>
+              <option value="asap">ASAP — need it this week</option>
+              <option value="soon">1–2 weeks</option>
+              <option value="month">3–4 weeks</option>
+              <option value="flexible">Flexible — no rush</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="field">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, any specific pages or features you need, and your budget range." required></textarea>
+          </div>
+
+          <!-- Live Estimate -->
+          <div class="estimate-card" id="estimate-card">
+            <p class="estimate-label">Estimated investment</p>
+            <p class="estimate-amount" id="estimate-amount">$400</p>
+            <p class="estimate-breakdown" id="estimate-breakdown">Brochure site – one-time</p>
+            <p class="estimate-note">*Final pricing after scoping call. This is a ballpark.</p>
+          </div>
+
+          <button class="button button-primary" type="submit">Send project brief</button>
           <p class="form-note" data-form-note aria-live="polite"></p>
         </form>
       </div>
@@ -96,6 +192,72 @@
     </div>
   </footer>
 
+  <script>
+    // Live Price Calculator
+    const form = document.getElementById('intake-form');
+    const typeInputs = document.querySelectorAll('input[name="project-type"]');
+    const addonAI = document.getElementById('addon-ai');
+    const addonMarketing = document.getElementById('addon-marketing');
+    const estimateAmount = document.getElementById('estimate-amount');
+    const estimateBreakdown = document.getElementById('estimate-breakdown');
+
+    function updateEstimate() {
+      let base = 0;
+      let typeLabel = '';
+
+      for (const input of typeInputs) {
+        if (input.checked) {
+          const card = input.closest('.radio-card');
+          base = parseInt(card.dataset.estimate);
+          typeLabel = card.querySelector('strong').textContent;
+          break;
+        }
+      }
+
+      let addonTotal = 0;
+      const addons = [];
+
+      if (addonAI.checked) {
+        addonTotal += 325;
+        addons.push('AI & Automation');
+      }
+      if (addonMarketing.checked) {
+        addonTotal += 590;
+        addons.push('Marketing & SEO');
+      }
+
+      const total = base + addonTotal;
+
+      if (total === 0) {
+        estimateAmount.textContent = '—';
+        estimateBreakdown.textContent = 'Select a project type to see estimate';
+      } else {
+        estimateAmount.textContent = '$' + total.toLocaleString();
+        const parts = [typeLabel];
+        if (addons.length > 0) parts.push('+ ' + addons.join(' + '));
+        if (addonAI.checked || addonMarketing.checked) parts.push('/mo');
+        estimateBreakdown.textContent = parts.join(' ');
+      }
+    }
+
+    typeInputs.forEach(el => el.addEventListener('change', updateEstimate));
+    addonAI.addEventListener('change', updateEstimate);
+    addonMarketing.addEventListener('change', updateEstimate);
+
+    // Set default
+    document.querySelector('input[name="project-type"][value="brochure"]').checked = true;
+    updateEstimate();
+
+    // Form submit
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const note = document.querySelector('[data-form-note]');
+      note.textContent = 'Thanks! We\'ll be in touch within 24 hours.';
+      form.reset();
+      document.querySelector('input[name="project-type"][value="brochure"]').checked = true;
+      updateEstimate();
+    });
+  </script>
   <script src="../js/main.js" defer></script>
 </body>
 </html>

@@ -901,6 +901,181 @@ svg {
   transform: translateY(0);
 }
 
+/* ── Intake form — radio cards, check cards, estimate ── */
+
+.intake-form {
+  display: grid;
+  gap: 20px;
+  padding: 24px;
+}
+
+.intake-form select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--bg);
+  color: var(--text);
+  padding: 15px 16px;
+  outline: none;
+  font: inherit;
+  cursor: pointer;
+  transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235865f2' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 14px;
+}
+
+.intake-form select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(88, 101, 242, 0.12);
+  background-color: var(--white);
+}
+
+.radio-group {
+  display: grid;
+  gap: 10px;
+}
+
+.radio-card {
+  display: block;
+  cursor: pointer;
+}
+
+.radio-card input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.radio-card-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  transition: border-color 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.radio-card input:checked + .radio-card-content {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(88, 101, 242, 0.2);
+  background: rgba(88, 101, 242, 0.04);
+}
+
+.radio-card-content strong {
+  grid-column: 1;
+  font-size: 0.95rem;
+}
+
+.radio-desc {
+  grid-column: 1;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.radio-price {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.checkbox-group {
+  display: grid;
+  gap: 10px;
+}
+
+.check-card {
+  display: block;
+  cursor: pointer;
+}
+
+.check-card input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.check-card-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2px 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  transition: border-color 180ms ease, background 180ms ease;
+}
+
+.check-card input:checked + .check-card-content {
+  border-color: var(--accent);
+  background: rgba(88, 101, 242, 0.04);
+}
+
+.check-card-content strong {
+  grid-column: 1;
+  font-size: 0.92rem;
+}
+
+.check-desc {
+  grid-column: 1;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.check-price {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.estimate-card {
+  padding: 18px 20px;
+  border: 2px solid var(--accent);
+  border-radius: 16px;
+  background: rgba(88, 101, 242, 0.06);
+  text-align: center;
+}
+
+.estimate-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+
+.estimate-amount {
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  margin: 0;
+}
+
+.estimate-breakdown {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 4px 0 0;
+}
+
+.estimate-note {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin: 10px 0 0;
+  opacity: 0.7;
+}
+
 @media (min-width: 560px) {
   .container {
     width: min(100% - 56px, 1200px);
