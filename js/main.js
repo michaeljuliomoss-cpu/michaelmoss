@@ -1,93 +1,93 @@
 const projects = {
-  lumen: {
-    title: "Lumen Ledger",
-    category: "Fintech / Product UI",
+  salas: {
+    title: "Salas &mdash; Agent Hub",
+    category: "SaaS / Dashboard",
     description:
-      "A calm analytics workspace for finance teams tracking cash flow, invoices, and revenue risk. The system turns dense operational data into prioritized decisions with a restrained visual language.",
-    role: "Product strategy, UX architecture, interface design, frontend prototype",
-    tech: "React, TypeScript, Figma, Design System",
-    visual: "thumb-lumen",
-    link: "https://example.com/lumen-ledger"
+      "A full-featured agent management dashboard with Discord-style UI, memory block editor, session monitoring, and integrated chat. Built for orchestrating AI agent workflows.",
+    role: "Full-stack development, UI design, system architecture",
+    tech: "Node.js, Express, Vanilla JS, CSS, Claude Code",
+    visual: "thumb-salas",
+    link: "https://github.com/michaeljuliomoss-cpu/michaelmoss"
   },
-  atlas: {
-    title: "Atlas Supply",
-    category: "Commerce / Web",
+  harbor: {
+    title: "Harbor Bistro",
+    category: "Restaurant / Web",
     description:
-      "A high-contrast commerce experience for a workwear label, combining editorial storytelling, fast product discovery, and a modular content system for seasonal drops.",
-    role: "Art direction, web design, Shopify theme development",
-    tech: "Shopify Liquid, CSS, JavaScript",
-    visual: "thumb-atlas",
-    link: "https://example.com/atlas-supply"
+      "A warm, appetite-driven website for a Nassau waterfront bistro. Menu, reservations, and story-driven visuals that transport visitors before they arrive.",
+    role: "Creative direction, web design, development",
+    tech: "HTML, CSS, JavaScript, Responsive",
+    visual: "thumb-harbor",
+    link: "#"
   },
-  forma: {
-    title: "Forma House",
-    category: "Culture / Identity",
+  coral: {
+    title: "Coral &amp; Clay",
+    category: "E-Commerce / Store",
     description:
-      "A brand and launch site for an independent cultural venue. The identity uses a simple circular mark, generous spacing, and an editorial rhythm that adapts across posters, tickets, and social content.",
-    role: "Brand identity, visual system, responsive website",
-    tech: "Figma, HTML, CSS, JavaScript",
-    visual: "thumb-forma",
-    link: "https://example.com/forma-house"
+      "An artisanal e-commerce experience for a Caribbean home goods brand. Clean product photography, seamless checkout, and a story that travels through every page.",
+    role: "Brand identity, web design, Shopify",
+    tech: "Shopify, HTML, CSS, JavaScript",
+    visual: "thumb-coral",
+    link: "#"
   },
-  orbit: {
-    title: "Orbit Studio",
-    category: "AI / Interface",
+  bahamasmed: {
+    title: "Bahamas Medical",
+    category: "Healthcare / Portal",
     description:
-      "An AI-assisted creative workspace designed for rapid concept generation, review, and version control. The interface keeps automation visible without overwhelming the creative process.",
-    role: "Product design, interaction model, design system",
-    tech: "Next.js, React, Tailwind, OpenAI API",
-    visual: "thumb-orbit",
-    link: "https://example.com/orbit-studio"
+      "A patient-centered clinic portal with appointment booking, medical records access, and provider directories. Built for clarity and trust.",
+    role: "UX design, frontend development, integration",
+    tech: "HTML, CSS, JavaScript, PHP",
+    visual: "thumb-bahamasmed",
+    link: "#"
   },
-  maru: {
-    title: "Maru Rooms",
-    category: "Hospitality / Brand",
+  islandtaxi: {
+    title: "Island Taxi",
+    category: "Mobile / Booking",
     description:
-      "A boutique hotel identity and booking experience built around quiet ritual, tactile materials, and a booking flow that feels more like a concierge conversation than a form.",
-    role: "Brand strategy, identity, booking UX",
-    tech: "Figma, Webflow, CMS",
-    visual: "thumb-maru",
-    link: "https://example.com/maru-rooms"
+      "A mobile-first booking platform connecting Nassau visitors with local drivers. Real-time availability, fare estimates, and ride tracking.",
+    role: "Product design, mobile development",
+    tech: "React Native, Node.js, Map API",
+    visual: "thumb-islandtaxi",
+    link: "#"
   },
-  kin: {
-    title: "Kin Health",
-    category: "Health / App",
+  nassaudental: {
+    title: "Nassau Dental",
+    category: "Medical / Service",
     description:
-      "A patient support app for chronic-care check-ins, medication reminders, and practitioner messaging. The product balances warmth with clinical clarity.",
-    role: "UX research, mobile UX, accessibility audit",
-    tech: "React Native, Node.js, WCAG 2.2",
-    visual: "thumb-kin",
-    link: "https://example.com/kin-health"
+      "A clean, reassuring service site for a dental practice. Online booking, service descriptions, patient resources, and before/after gallery.",
+    role: "Web design, development, SEO",
+    tech: "HTML, CSS, JavaScript",
+    visual: "thumb-nassaudental",
+    link: "#"
   },
-  sable: {
-    title: "Sable Journal",
-    category: "Editorial / Web",
+  palmresort: {
+    title: "Palm Resort",
+    category: "Hospitality / Web",
     description:
-      "A digital journal for long-form essays and archival research. The system prioritizes reading comfort, issue navigation, and a flexible template for contributors.",
-    role: "Editorial design, frontend development, CMS architecture",
-    tech: "Next.js, Sanity, CSS Modules",
-    visual: "thumb-sable",
-    link: "https://example.com/sable-journal"
+      "An immersive resort website with room galleries, virtual tours, booking integration, and local attraction guides. Designed to convert lookers into guests.",
+    role: "Creative direction, full-stack build",
+    tech: "HTML, CSS, JavaScript, Booking API",
+    visual: "thumb-palmresort",
+    link: "#"
   },
-  field: {
-    title: "Field Signal",
-    category: "Climate / Data",
+  bayrealty: {
+    title: "Bay Realty",
+    category: "Real Estate / Platform",
     description:
-      "A data platform for environmental teams monitoring field sensors, alerts, and mitigation progress across distributed project sites.",
-    role: "Dashboard UX, data visualization, design system",
-    tech: "Vue, D3, Python API, Design Tokens",
-    visual: "thumb-field",
-    link: "https://example.com/field-signal"
+      "A property listing platform for Nassau real estate. Advanced search, virtual tours, agent profiles, and marketplace tools.",
+    role: "Platform strategy, design, development",
+    tech: "React, Node.js, PostgreSQL, Mapbox",
+    visual: "thumb-bayrealty",
+    link: "#"
   },
-  northstar: {
-    title: "Northstar Fleet",
-    category: "Mobility / Platform",
+  harbourlegal: {
+    title: "Harbour Legal",
+    category: "Legal / Web",
     description:
-      "An operations platform for electric vehicle fleets, pairing route intelligence, maintenance scheduling, and driver-facing updates in one unified workspace.",
-    role: "Platform strategy, product design, prototype testing",
-    tech: "React, GraphQL, Mapbox, Storybook",
-    visual: "thumb-northstar",
-    link: "https://example.com/northstar-fleet"
+      "A professional legal services site with practice area overviews, attorney profiles, case management portal, and client resources.",
+    role: "Web design, development, CMS",
+    tech: "HTML, CSS, JavaScript, WordPress",
+    visual: "thumb-harbourlegal",
+    link: "#"
   }
 };
 
