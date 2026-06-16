@@ -18,8 +18,12 @@
         <span>Northline</span>
       </a>
 
+      <button class="hamburger" data-hamburger aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav" aria-label="Primary navigation">
         <a class="nav-link is-home" href="index.html">Home</a>
+        <a class="nav-link is-pricing" href="pricing/index.html">Pricing</a>
         <a class="nav-link is-cases" href="cases/index.html">Cases</a>
         <a class="nav-link is-contact" href="contact/index.html">Contact</a>
       </nav>
@@ -54,44 +58,15 @@
       </a>
     </section>
 
-    <section class="section services" id="services" aria-labelledby="services-title">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Services</p>
-          <h2 id="services-title">What we build.</h2>
-        </div>
-
-        <div class="services-grid">
-          <div class="service-card reveal">
-            <p class="eyebrow">01 / Websites</p>
-            <h3>Digital Presence</h3>
-            <p>Mobile-first, conversion-focused sites for Nassau businesses. Clean, fast, built to bring in customers.</p>
-            <div class="pricing-item"><span>Starter Site</span><span>$400</span></div>
-            <div class="pricing-item"><span>Business Site</span><span>$400&ndash;$1,000</span></div>
-            <div class="pricing-item"><span>Premium Site</span><span>$1,000&ndash;$2,000</span></div>
-            <div class="pricing-item"><span>Maintenance</span><span>$50&ndash;$200/mo</span></div>
-            <span class="note">3&ndash;10+ pages, mobile-first, contact forms, galleries, booking</span>
-          </div>
-
-          <div class="service-card reveal">
-            <p class="eyebrow">02 / AI &amp; Automation</p>
-            <h3>Smart Systems</h3>
-            <p>Chatbots, booking automation, and AI workflows that save you hours every day.</p>
-            <div class="pricing-item"><span>Smart Chatbots</span><span>$150&ndash;$500/mo</span></div>
-            <div class="pricing-item"><span>Workflow Automation</span><span>Custom</span></div>
-            <div class="pricing-item"><span>AI Content Systems</span><span>Custom</span></div>
-            <span class="note">AI support, booking, FAQs, content generation, SEO</span>
-          </div>
-
-          <div class="service-card reveal">
-            <p class="eyebrow">03 / SaaS &amp; Products</p>
-            <h3>Digital Tools</h3>
-            <p>Custom web apps, dashboards, and integrations built for your specific workflow.</p>
-            <div class="pricing-item"><span>Custom SaaS Build</span><span>Custom</span></div>
-            <div class="pricing-item"><span>Agent Dashboards</span><span>Custom</span></div>
-            <div class="pricing-item"><span>API Integrations</span><span>Custom</span></div>
-            <span class="note">Web apps, monitoring tools, admin panels, API connections</span>
-          </div>
+    <section class="section pricing-cta-section" id="pricing" aria-labelledby="pricing-title">
+      <div class="container" style="text-align: center;">
+        <p class="eyebrow reveal">Services &amp; Pricing</p>
+        <h2 id="pricing-title" class="reveal" style="font-size: clamp(2rem, 6vw, 4rem);">Transparent pricing, no surprises.</h2>
+        <p class="reveal" style="max-width: 600px; margin: 20px auto 32px; color: var(--muted);">
+          From starter websites to full AI systems &mdash; every project starts with a conversation.
+        </p>
+        <div class="reveal">
+          <a class="button button-primary" href="pricing/index.html" style="font-size: 1.1rem; min-height: 56px; padding: 0 32px;">View full pricing &mdash; $400 to $2,000+</a>
         </div>
       </div>
     </section>

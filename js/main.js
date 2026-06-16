@@ -103,6 +103,35 @@ function initHeader() {
 
   setHeaderState();
   window.addEventListener("scroll", setHeaderState, { passive: true });
+
+  // Hamburger toggle
+  const hamburger = document.querySelector("[data-hamburger]");
+  const nav = document.querySelector(".nav");
+  if (hamburger && nav) {
+    hamburger.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("is-open");
+      hamburger.classList.toggle("is-open");
+      hamburger.setAttribute("aria-expanded", isOpen);
+    });
+
+    // Close nav when clicking a link
+    nav.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("is-open");
+        hamburger.classList.remove("is-open");
+        hamburger.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    // Close nav on outside click
+    document.addEventListener("click", (e) => {
+      if (!header.contains(e.target)) {
+        nav.classList.remove("is-open");
+        hamburger.classList.remove("is-open");
+        hamburger.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 }
 
 function initNavigation() {
@@ -116,9 +145,11 @@ function initNavigation() {
     const isHome = link.classList.contains("is-home");
     const isCases = link.classList.contains("is-cases");
     const isContact = link.classList.contains("is-contact");
+    const isPricing = link.classList.contains("is-pricing");
 
     const active =
       (isHome && (normalized.endsWith("/index.html") || normalized.endsWith("/portfolio/index.html"))) ||
+      (isPricing && normalized.endsWith("/pricing/index.html")) ||
       (isCases && normalized.endsWith("/cases/index.html")) ||
       (isContact && normalized.endsWith("/contact/index.html"));
 
