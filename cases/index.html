@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work | Northline Studio</title>
+  <meta name="description" content="Selected portfolio cases from Northline Studio, a minimal digital product design studio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body class="page-cases">
+  <header class="site-header" data-header>
+    <div class="container nav-shell">
+      <a class="brand" href="../index.html" aria-label="Northline Studio home">
+        <span class="brand-mark">N</span>
+        <span>Northline</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link is-active" href="index.html">Cases</a>
+        <a class="nav-link is-contact" href="../contact/index.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow reveal">Work archive</p>
+        <h1 id="page-title">Work | Northline Studio</h1>
+        <p class="page-lede reveal">
+          A concise archive of brand, interface, and web systems built for teams that value clarity over spectacle.
+        </p>
+      </div>
+    </section>
+
+    <section class="section cases-section" aria-labelledby="cases-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow" id="cases-title">Full portfolio</p>
+            <h2>Nine focused cases.</h2>
+          </div>
+          <a class="text-link" href="../index.html">Back to home →</a>
+        </div>
+
+        <div class="project-grid project-grid--archive">
+          <button class="case-card reveal" type="button" data-project="lumen">
+            <span class="case-thumb thumb-lumen" aria-hidden="true"></span>
+            <span class="case-body">
+              <span class="case-meta">Fintech / Product UI</span>
+              <span class="case-title">Lumen Ledger</span>
+            </span>
+          </button>
+
+          <button class="case-card reveal" type="button" data-project="atlas">
+            <span class="case-thumb thumb-atlas" aria-hidden="true"></span>
+            <span class="case-body">
+              <span class="case-meta">Commerce / Web</span>
+              <span class="case-title">Atlas Supply</span>
+            </span>
+          </button>
+
+          <button class="case-card reveal" type="button" data-project="forma">
+            <span class="case-thumb thumb-forma" aria-hidden="true"></span>
+            <span class="case-body">
+              <span class="case-meta">Culture / Identity</span>
+              <span class="case-title">Forma House</span>
+            </span>
+          </button>
+
+          <button class="case-card reveal" type="button" data-project="orbit">
+            <span class="case-thumb thumb-orbit" aria-hidden="true"></span>
+            <span class="case-body">
+              <span class="case-meta">AI / Interface</span>
+              <span class="case-title">Orbit Studio</span>
+            </span>
+          </button>
+
+          <button class="case-card reveal" type="button" data-project="maru">
+            <span class="case-thumb thumb-maru" aria-hidden="true"></span>
+            <span class="case-body">
+              <span class="case-meta">Hospitality / Brand</span>
+              <span class="case-title">Maru Rooms</span>
+            </span>
+          </button>
+
+          <button class="case-card reveal" type="button" data-project="kin">
+            <span class="case-thumb thumb-kin" aria-hidden="true"></span>
+            <span class="case-body">
+              <span class="case-meta">Health / App</span>
+              <span class="case-title">Kin Health</span>
+            </span>
+          </button>
+
+          <button class="case-card reveal" type="button" data-project="sable">
+            <span class="case-thumb thumb-sable" aria-hidden="true"></span>
+            <span class="case-body">
+              <span class="case-meta">Editorial / Web</span>
+              <span class="case-title">Sable Journal</span>
+            </span>
+          </button>
+
+          <button class="case-card reveal" type="button" data-project="field">
+            <span class="case-thumb thumb-field" aria-hidden="true"></span>
+            <span class="case-body">
+              <span class="case-meta">Climate / Data</span>
+              <span class="case-title">Field Signal</span>
+            </span>
+          </button>
+
+          <button class="case-card reveal" type="button" data-project="northstar">
+            <span class="case-thumb thumb-northstar" aria-hidden="true"></span>
+            <span class="case-body">
+              <span class="case-meta">Mobility / Platform</span>
+              <span class="case-title">Northstar Fleet</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2026 Northline Studio. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <a href="https://x.com/" target="_blank" rel="noopener">X</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://dribbble.com/" target="_blank" rel="noopener">Dribbble</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="modal" data-modal aria-hidden="true">
+    <div class="modal__overlay" data-modal-close></div>
+    <article class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" type="button" data-modal-close aria-label="Close project details">×</button>
+      <div class="modal__visual" data-modal-visual></div>
+      <div class="modal__content">
+        <p class="eyebrow" data-modal-category></p>
+        <h2 id="modal-title" data-modal-title></h2>
+        <p data-modal-description></p>
+        <dl class="modal__details">
+          <div>
+            <dt>Role</dt>
+            <dd data-modal-role></dd>
+          </div>
+          <div>
+            <dt>Technology</dt>
+            <dd data-modal-tech></dd>
+          </div>
+        </dl>
+        <a class="text-link" data-modal-link href="#">Visit project →</a>
+      </div>
+    </article>
+  </div>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
